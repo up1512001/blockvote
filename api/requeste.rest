@@ -1,0 +1,100 @@
+
+POST  http://localhost:3001/createadmin
+Content-Type: application/json
+
+{
+    "email":"up1@gmail.com",
+    "name":"utsav",
+    "password":"up"
+}
+
+###
+POST http://localhost:3001/getadmin
+Content-Type: application/json
+
+{
+    "email":"up1@gmail.com",
+    "password":"up"
+}
+
+###
+
+POST http://localhost:3001/createuser
+Content-Type: application/json
+
+{
+    "email":"uk@gmail.com",
+    "name":"uts",
+    "aadhar":"k3555dkdu22225",
+    "age":168,
+    "password":"up"
+}    
+
+###
+POST http://localhost:3001/getuser
+Content-Type: application/json
+
+{
+    "email":"f5r567249w@gmail.com",
+    "password":"ferfw"
+}
+
+
+###
+
+POST http://localhost:3001/createpoll
+Content-Type: application/json
+
+{
+    "email":"up1512001@gmail.com",
+    "text":"h123",
+    "polls":[{
+        "candidateName":"utsv",
+        "candidateURL":"abc"
+    },{
+        "candidateName":"uft",
+        "candidateURL":"abcn"
+    },{
+        "candidateName":"uts",
+        "candidateURL":"abcnd"
+    }]
+}
+
+###
+POST http://localhost:3001/showpolls
+Content-Type: application/json
+
+{
+
+}
+
+###
+
+POST http://localhost:3001/createpoll
+Content-Type: application/json
+
+{
+    "email":"up1512001@gmail.com",
+    "text":"h123455",
+    "polls":[{
+        "candidateName":"b3e5h",
+        "candidateURL":"cce35kf"
+    },{
+        "candidateName":"kjee5jnk",
+        "candidateURL":"kjer53"
+    },{
+        "candidateName":"er5he",
+        "candidateURL":"rffn54"
+    }]
+}
+
+
+###
+POST http://localhost:3001/vote
+Content-Type: application/json
+
+{
+    "pollingid":"63fe39cff9ef2fac5cf6029b",
+    "userid":"63fe3b98cfcd7292a402c2f8",
+    "candidateid":"63fe39cff9ef2fac5cf6029e"
+}
